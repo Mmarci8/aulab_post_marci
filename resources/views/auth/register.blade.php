@@ -8,16 +8,8 @@
     </div>
     <div class="container my-5">
         <div class="row justify-content-center">
-        <div> class="col-12 col-md-8"
-            @if($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach($errors->() as $error)
-                    <li>{{$error}}</li>
-                    @endoforeach
-                </ul>
-            </div>
-            @endif
+        
+            
 <form class="card p-5 shadow" action="{{route('register')}}" method="post">
 @csrf
 <div class="mb-3">
