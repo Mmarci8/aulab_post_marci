@@ -21,16 +21,16 @@
     </div>
 </div>
 
-<form class="card p-5 shadow" action="{{route('article.store')}}" method="post" enctype="multipart/form-data"
+<form class="card p-5 shadow" action="{{route('article.store')}}" method="post" enctype="multipart/form-data">
 @csrf
 
 <div class='mb-3'>
     <label for="title" class="form-label">Titolo:</label>
-    <input name="title" type="text" class="form-control" id="titles" valure="{{old('title')}}">
+    <input name="title" type="text" class="form-control" id="titles" value="{{old('title')}}">
 </div>
 <div class="mb-3">
     <label for="subtitle" class="form-label">Sottotitolo:</label>
-    <input name="subtitle" type="text" class="form-control" id="subtitles" valure="{{old('subtitle')}}">
+    <input name="subtitle" type="text" class="form-control" id="subtitles" value="{{old('subtitle')}}">
 </div>
 <div class="mb-3">
     <label for="image" class="form-label">Immagine:</label>
