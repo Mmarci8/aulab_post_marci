@@ -17,16 +17,14 @@
                 </ul>
             </div>
             @endif
-        </div>
-    </div>
-</div>
+        
 
 <form class="card p-5 shadow" action="{{route('article.store')}}" method="post" enctype="multipart/form-data">
 @csrf
 
 <div class='mb-3'>
     <label for="title" class="form-label">Titolo:</label>
-    <input name="title" type="text" class="form-control" id="titles" value="{{old('title')}}">
+    <input name="title" type="text" class="form-control" id="title" value="{{old('title')}}">
 </div>
 <div class="mb-3">
     <label for="subtitle" class="form-label">Sottotitolo:</label>
@@ -54,8 +52,7 @@
 </div>
 
 </form>
-</div>
-
-
-
+           </div>
+         </div>
+    </div>
 </x-layout>
