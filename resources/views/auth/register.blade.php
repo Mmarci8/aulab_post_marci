@@ -8,6 +8,17 @@
     </div>
     <div class="container my-5">
         <div class="row justify-content-center">
+
+
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors-> all()as $error )
+                    <li>{{ $errors }}</li>                      
+                    @endforeach
+                </ul>
+            </div>
+            @endif
         
             
 <form class="card p-5 shadow" action="{{route('register')}}" method="post">
