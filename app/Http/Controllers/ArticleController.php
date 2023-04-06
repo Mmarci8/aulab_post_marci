@@ -46,7 +46,7 @@ class ArticleController extends Controller
             'category' => $request->category,
             'user_id'=> Auth::user()->id, 
         ]);
-        return redirect(route('homepage'))->with('message','Articolo creato correttamente');
+        return redirect()->route('homepage')->with('message' , 'Articolo salvato correttamente');
     }
 
     /**
